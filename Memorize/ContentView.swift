@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    private let emojis = ["👻", "🎃", "🕷️", "😈"]
+    
     var body: some View {
         HStack {
-            CardView(content: "👻")
-            CardView(content: "🎃")
-            CardView(content: "🕷️", isFaceUp: true)
-            CardView(content: "😈", isFaceUp: true)
+            CardView(content: emojis[0])
+            CardView(content: emojis[1])
+            CardView(content: emojis[2], isFaceUp: true)
+            CardView(content: emojis[3], isFaceUp: true)
         }
         .foregroundStyle(.orange)
         .padding()
