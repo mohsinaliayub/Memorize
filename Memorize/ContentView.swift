@@ -18,16 +18,26 @@ struct ContentView: View {
                     CardView(content: emojis[index])
                 }
             }
+            .foregroundStyle(.orange)
+            
             HStack {
-                Button("Remove Card") {
+                Button(action: {
                     cardCount -= 1
+                }) {
+                    Image(systemName: "rectangle.stack.fill.badge.minus")
                 }
-                Button("Add Card") {
-                    cardCount += 1
+                
+                Spacer()
+                
+                Button(action: {
+                    cardCount -= 1
+                }) {
+                    Image(systemName: "rectangle.stack.fill.badge.plus")
                 }
             }
+            .imageScale(.large)
+            .font(.largeTitle)
         }
-        .foregroundStyle(.orange)
         .padding()
     }
 }
