@@ -39,23 +39,20 @@ struct ContentView: View {
     }
     
     var cardRemover: some View {
-        Button(action: {
-            if cardCount > 1 {
-                cardCount -= 1
-            }
-        }) {
-            Image(systemName: "rectangle.stack.fill.badge.minus")
-        }
+        cardCountAdjuster(by: -1, symbol: "rectangle.stack.fill.badge.minus")
     }
     
     var cardAdder: some View {
+        cardCountAdjuster(by: +1, symbol: "rectangle.stack.fill.badge.plus")
+    }
+    
+    func cardCountAdjuster(by offset: Int, symbol: String) -> some View {
         Button(action: {
-            if cardCount < emojis.count {
-                cardCount += 1
-            }
-        }) {
-            Image(systemName: "rectangle.stack.fill.badge.plus")
-        }
+            cardCount += offset
+        }, label: {
+            Image(systemName: symbol)
+        })
+        .disabled(cardCount + offset < 1 || cardCount + offset > emojis.count)
     }
 }
 
