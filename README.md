@@ -14,5 +14,8 @@ A simple card matching game built using SwiftUI.
 - [ ] Add transitions for cards.
 
 
+
 ## Screenshots
+The app currently looks like this:
+
 <img src="/Screenshots/Memorize.png" width="231" height="500" alt="Memorize">
