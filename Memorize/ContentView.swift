@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    private let emojis = ["👻", "🎃", "🕷️", "😈"]
+    private let emojis = ["👻", "🎃", "🕷️", "😈", "💀", "🕸️", "🧙‍♀️", "🙀", "👹", "😱", "☠️", "🍭"]
     
     var body: some View {
         HStack {
@@ -23,7 +23,7 @@ struct ContentView: View {
 
 struct CardView: View {
     let content: String
-    @State var isFaceUp = false
+    @State var isFaceUp = true
     
     var body: some View {
         ZStack {
