@@ -2,9 +2,17 @@
 A simple card matching game built using SwiftUI.
 
 
-## Development Progress
-- [ ] Create a simple card.
+## Feature Progress
+- [x] Create a simple card.
+- [x] Toggle card to face-up or face-down.
+- [x] Display multiple cards.
+- [x] Show cards in a grid.
 - [ ] Create a model to manage card-playing logic.
 - [ ] Implement MVVM to make app more stable.
+- [ ] Add a Pie shape for timer.
+- [ ] Animate the Pie shape.
+- [ ] Add transitions for cards.
 
 
+## Screenshots
+<img src="/Screenshots/Memorize.png" width="231" height="500" alt="Memorize">
