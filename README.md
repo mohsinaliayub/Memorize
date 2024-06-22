@@ -1,5 +1,5 @@
 # Memorize
-A simple card matching game built using SwiftUI.
+A simple card matching game built using SwiftUI. The game is developed while working alongside the lectures of **Developing iOS Apps using SwiftUI** course by Stanford.
 
 
 ## Feature Progress
