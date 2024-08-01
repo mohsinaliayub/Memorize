@@ -18,20 +18,13 @@ struct MemoryGame<CardContent: Equatable> {
             cards.append(Card(content: content, id: "\(pairIndex+1)a"))
             cards.append(Card(content: content, id: "\(pairIndex+1)b"))
         }
+        shuffle()
     }
     
     mutating func choose(_ card: Card) {
-        let chosenIndex = index(of: card)
-        cards[chosenIndex].isFaceUp.toggle()
-    }
-    
-    private func index(of card: Card) -> Int {
-        for index in cards.indices {
-            if cards[index] == card {
-                return index
-            }
+        if let chosenIndex = cards.firstIndex(where: { $0 == card }) {
+            cards[chosenIndex].isFaceUp.toggle()
         }
-        return 0 // FIXME: bogus!
     }
     
     mutating func shuffle() {
