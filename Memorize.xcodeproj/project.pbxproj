@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		682590D92C5C29C700764E8B /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682590D82C5C29C700764E8B /* MemoryGame.swift */; };
+		682590DB2C5C2ACD00764E8B /* EmojiMemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682590DA2C5C2ACD00764E8B /* EmojiMemoryGame.swift */; };
 		68DAFFBB2C238FAB00402E33 /* MemorizeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DAFFBA2C238FAB00402E33 /* MemorizeApp.swift */; };
 		68DAFFBD2C238FAB00402E33 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DAFFBC2C238FAB00402E33 /* ContentView.swift */; };
 		68DAFFBF2C238FAD00402E33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68DAFFBE2C238FAD00402E33 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		682590D82C5C29C700764E8B /* MemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
+		682590DA2C5C2ACD00764E8B /* EmojiMemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiMemoryGame.swift; sourceTree = "<group>"; };
 		68DAFFB72C238FAB00402E33 /* Memorize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memorize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68DAFFBA2C238FAB00402E33 /* MemorizeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorizeApp.swift; sourceTree = "<group>"; };
 		68DAFFBC2C238FAB00402E33 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 				68DAFFBA2C238FAB00402E33 /* MemorizeApp.swift */,
 				68DAFFBC2C238FAB00402E33 /* ContentView.swift */,
 				682590D82C5C29C700764E8B /* MemoryGame.swift */,
+				682590DA2C5C2ACD00764E8B /* EmojiMemoryGame.swift */,
 				68DAFFBE2C238FAD00402E33 /* Assets.xcassets */,
 				68DAFFC02C238FAD00402E33 /* Preview Content */,
 			);
@@ -143,6 +146,7 @@
 				682590D92C5C29C700764E8B /* MemoryGame.swift in Sources */,
 				68DAFFBD2C238FAB00402E33 /* ContentView.swift in Sources */,
 				68DAFFBB2C238FAB00402E33 /* MemorizeApp.swift in Sources */,
+				682590DB2C5C2ACD00764E8B /* EmojiMemoryGame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
