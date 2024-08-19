@@ -64,6 +64,6 @@ struct CardView_Previews: PreviewProvider {
             }
         }
         .padding()
-        .foregroundStyle(.green)
+        .foregroundStyle(.orange)
     }
 }
