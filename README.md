@@ -9,7 +9,7 @@ A simple card matching game built using SwiftUI. The game is developed while wor
 - [x] Show cards in a grid.
 - [x] Create a model to manage card-playing logic.
 - [x] Implement MVVM to separate data from UI.
-- [ ] Add a Pie shape for timer.
+- [x] Add a Pie shape for timer.
 - [ ] Animate the Pie shape.
 - [ ] Add transitions for cards.
 
