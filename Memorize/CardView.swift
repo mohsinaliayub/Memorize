@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct CardView: View {
-    let card: MemoryGame<String>.Card
+    typealias Card = MemoryGame<String>.Card
     
-    init(_ card: MemoryGame<String>.Card) {
+    let card: Card
+    
+    init(_ card: Card) {
         self.card = card
     }
     
@@ -24,6 +26,8 @@ struct CardView: View {
                     .font(.system(size: 200))
                     .minimumScaleFactor(0.01)
                     .aspectRatio(1, contentMode: .fit)
+                    .multilineTextAlignment(.center)
+                    .padding(5)
             }
             .opacity(card.isFaceUp ? 1 : 0)
             base.opacity(card.isFaceUp ? 0 : 1)
@@ -33,10 +37,21 @@ struct CardView: View {
     }
 }
 
-#Preview {
-    typealias Card = MemoryGame<String>.Card
+struct CardView_Previews: PreviewProvider {
+    typealias Card = CardView.Card
     
-    return CardView(Card(content: "X", id: "test1"))
+    static var previews: some View {
+        VStack {
+            HStack {
+                CardView(Card(isFaceUp: true, content: "X", id: "test1"))
+                CardView(Card(content: "X", id: "test1"))
+            }
+            HStack {
+                CardView(Card(isFaceUp: true, content: "This is a very long string and I hope it fits", id: "test1"))
+                CardView(Card(isMatched: true, content: "X", id: "test1"))
+            }
+        }
         .padding()
         .foregroundStyle(.green)
+    }
 }
